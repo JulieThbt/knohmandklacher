@@ -1,0 +1,70 @@
+html, body {
+    height: 100%; }
+
+a{
+    text-decoration: none;
+    color:white;
+}
+
+a:hover{
+    color:white;
+}
+  
+.cover {
+min-height: 100%;
+display: flex;
+align-items: center; }
+
+.bg-dark {
+    background-color: #151515 !important;
+}
+
+.mt-5{
+    margin-top:5rem;
+}
+
+.animate-in{
+    transition:all 1.3s ease-out;
+    position:relative;
+    opacity:1
+}
+.animate-in.out-of-viewport{
+    opacity:0
+}
+.animate-in-left{
+    transition:all 1s ease-out;
+    position:relative;
+    opacity:1;
+    left:0
+}
+.animate-in-left.out-of-viewport{
+    opacity:0;
+    left:0
+}
+.animate-in-right{
+    transition:all 1s ease-out;
+    position:relative;
+    opacity:1;
+    left:0
+}
+.animate-in-right.out-of-viewport{
+    opacity:0;
+    left:0
+}
+
+.chevron{
+    animation:shake 2s infinite;
+    transform:translate3d(0,0,0)
+}
+
+@keyframes shake{
+    0%,100%,20%,50%,80%{
+        transform:translateY(0)
+    }
+    40%{
+        transform:translateY(.25rem)
+    }
+    60%{
+        transform:translateY(.5rem)
+    }
+}
