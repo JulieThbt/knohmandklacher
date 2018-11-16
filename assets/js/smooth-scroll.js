@@ -27,9 +27,9 @@
         if (target.length) {
           // Only prevent default if animation is actually gonna happen
           event.preventDefault()
-          
+          var targetOffset = target.offset().top - 100;
           $('html, body').animate({
-            scrollTop: target.offset().top
+            scrollTop: targetOffset
           },
           duration, function() {
             // Callback after animation
