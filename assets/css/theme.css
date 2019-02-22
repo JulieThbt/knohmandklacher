@@ -1,26 +1,43 @@
 html, body {
     height: 100%; }
 
-.big-title{
-    font-size: 5rem;
+.navbar{
+    transition:all .5s;
+    transition-delay:.25s;
+    box-shadow:0 0 1rem 0 rgba(0,0,0,.2)
+}
+.navbar.navbar-ontop{
+    background-color:transparent!important;
+    padding-top:1rem;
+    box-shadow:none!important
+}
+.navbar .nav-item .nav-link{
+    transition:background-color .4s;
+    border-radius:.25rem;
+    padding-top:.75rem;
+    padding-bottom:.75rem;
+    line-height:1rem;
+}
+.nav-link:hover, .nav-link:active{
+    background-color:rgba(255,255,255,.2)
+}
+.navbar .btn{
+    padding-top:.75rem;
+    padding-bottom:.75rem;
+    line-height:1rem;
+    border:none
+}
+
+nav a{
+    color:#fff!important
+}
+
+.btn.navbar-btn.bg-white.text-dark:hover{
+    text-decoration: underline;
 }
 
 .p-10{
     padding-top: 6%;
-}
-
-.carousel-item {
-    height: 100vh;
-    min-height: 300px;
-    background: no-repeat center center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-    }
-
-.carousel-caption{
-    top:30%;
 }
 
 a{
@@ -78,3 +95,4 @@ align-items: center; }
     opacity:0;
     left:0
 }
+
